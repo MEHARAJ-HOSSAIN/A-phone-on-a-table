@@ -30,6 +30,8 @@ day.innerHTML=`${days}`;
 month.innerHTML=`${months}`;
 year.innerHTML=`${years}`;
 switch(weeks){
+    case 0:week.innerHTML="Sunday";
+        break;
     case 1:week.innerHTML="Monday";
         break;
     case 2:week.innerHTML="Tuesday";
@@ -41,8 +43,6 @@ switch(weeks){
     case 5:week.innerHTML="Friday";
             break;
     case 6:week.innerHTML="Saturday";
-            break;
-    case 7:week.innerHTML="Sunday";
             break;
 }
 },1000);
