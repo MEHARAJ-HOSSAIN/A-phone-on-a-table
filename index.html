@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mobile</title>
+</head>
+<body>
+    <div class="container">
+        <div class="table">
+        <div class="mobile">
+            <div class="screen">
+                <div class="timing">
+                    <div class="time">
+                    <span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+                    </div>
+                    <div class="date">
+                    <span id="day">00</span>/<span id="month">00</span>/<span id="year">0000</span>,<span id="week">Week</span>
+                    </div>
+                </div>
+                <div id="lock">
+                        <input type="text" id="ls" readonly>
+                    <div id="pass">
+                        <button class="btn" onclick="add('1')">1</button>
+                        <button class="btn" onclick="add('2')">2</button>
+                        <button class="btn" onclick="add('3')">3</button>
+                        <button class="btn" onclick="add('4')">4</button>
+                        <button class="btn" onclick="add('5')">5</button>
+                        <button class="btn" onclick="add('6')">6</button>
+                        <button class="btn" onclick="add('7')">7</button>
+                        <button class="btn" onclick="add('8')">8</button>
+                        <button class="btn" onclick="add('9')">9</button>
+                        <button class="btn" onclick="dlt()">DLT</button>
+                        <button class="btn" onclick="add('0')">0</button>
+                        <button class="btn" onclick="check()">OK</button>
+                    </div>
+                </div>
+                <div class="bar">
+                    <i class="fa-solid fa-phone-volume" id="bar1"></i>
+                    <button id="back"><</button>
+                    <i class="fa-solid fa-camera" id="bar2"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="foot"></div>
+    </div>
+<script src="app.js" defer></script>
+</body>
+</html>
